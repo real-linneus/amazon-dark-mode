@@ -1,5 +1,313 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+.amazon-dark-mode {
+  /* Background colors */
+  --background-color: #121212;
+  --surface-color: #1e1e1e;
+  --container-color: #242424;  /* New color for product containers */
+  --input-background: #2d2d2d; /* New color for input fields */
+  --border-color: #404040;
+  
+  /* Text colors */
+  --text-primary: #ffffff;
+  --text-secondary: #b3b3b3;
+  
+  /* Accent colors */
+  --accent-color: #ff9900;
+}
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+.amazon-dark-mode body,
+.amazon-dark-mode #navbar,
+.amazon-dark-mode #nav-belt,
+.amazon-dark-mode #nav-main,
+.amazon-dark-mode #dp,
+.amazon-dark-mode #detail-page-container,
+.amazon-dark-mode #ppd,
+.amazon-dark-mode #rightCol,
+.amazon-dark-mode #desktop-grid-1,
+.amazon-dark-mode #reviewsMedley,
+.amazon-dark-mode #sp_detail,
+.amazon-dark-mode #container,
+.amazon-dark-mode .a-container,
+.amazon-dark-mode #navbar-main,
+.amazon-dark-mode #pageContent,
+.amazon-dark-mode .a-expander-header,
+.amazon-dark-mode .nav-flyout-body,
+.amazon-dark-mode .ewc-active-cart,
+.amazon-dark-mode .ewc-cart-header,
+.amazon-dark-mode .glow-toaster-slot-subnav,
+.amazon-dark-mode .a-section-expander-container,
+.amazon-dark-mode #hmenu-content,
+.amazon-dark-mode #cpf-sidesheet,
+.amazon-dark-mode .left-pane-results-container,
+.amazon-dark-mode .cards_carousel_widget-suggestion,
+.amazon-dark-mode .page-wrapper,
+.amazon-dark-mode .alm-carousel-desktop,
+.amazon-dark-mode .s-matching-dir,
+.amazon-dark-mode .s-desktop-content,
+.amazon-dark-mode .a-divider-inner::after,
+.amazon-dark-mode [class*="DesktopDiscountAsinGrid"],
+.amazon-dark-mode .mako-v2,
+.amazon-dark-mode #search {
+  background-color: var(--background-color) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Product Containers */
+/* .amazon-dark-mode #mediamatrix_feature_div.div, */
+.amazon-dark-mode [id*="tab_heading_desktop_buybox_group"],
+.amazon-dark-mode .bbop-grid-container,
+.amazon-dark-mode .maple-banner__text,
+.amazon-dark-mode .sp-cc-buttons-container,
+.amazon-dark-mode .a-popover-modal div:not(.octopus-sims-img-overlay),
+.amazon-dark-mode .mako-v2 > div,
+.amazon-dark-mode .your_books_ingress_section,
+.amazon-dark-mode .drop-down-content,
+.amazon-dark-mode .persistent-header a,
+.amazon-dark-mode .persistent-header,
+.amazon-dark-mode #cs-help-search,
+.amazon-dark-mode #sp-cc,
+.amazon-dark-mode #footeroptions,
+.amazon-dark-mode .options-col div,
+.amazon-dark-mode .aod-sticky-pinned-offer,
+.amazon-dark-mode #aod-container > div,
+.amazon-dark-mode [id*="comparison-table-container"] *,
+.amazon-dark-mode [class*="a-accordion"],
+.amazon-dark-mode #all-offers-display,
+.amazon-dark-mode #Northstar-Buybox > div > div,
+.amazon-dark-mode #mediaMatrixGridAODPopover_feature_div span,
+.amazon-dark-mode #ee-aisles-on-ba-widget-container,
+.amazon-dark-mode [class*="_gift-registry-icon-highlights-desktop"],
+.amazon-dark-mode [class*="DesktopFlexBannerLayout-module"],
+.amazon-dark-mode [class*="style_couponBadge"],
+.amazon-dark-mode [class*="style_badgeMessage"],
+.amazon-dark-mode [class*="GridItem-module"],
+.amazon-dark-mode [class*="navOptionChild"],
+.amazon-dark-mode [class*="navHeader"],
+.amazon-dark-mode [class*="NavigationBar-module"],
+.amazon-dark-mode [class*="product-comparison-desktop"],
+.amazon-dark-mode .apm-sidemodule,
+.amazon-dark-mode .gr-subnav,
+.amazon-dark-mode .puis-status-badge-container,
+.amazon-dark-mode .dcl-container-inner,
+.amazon-dark-mode .s-color-swatch-container,
+.amazon-dark-mode .nav-fullWidthSubnavFlyout,
+.amazon-dark-mode .s-desktop-toolbar,
+.amazon-dark-mode .bxc-grid__content,
+.amazon-dark-mode .a-box-inner,
+.amazon-dark-mode .alm-grid-desktop-grid-container > div > div,
+.amazon-dark-mode .fs-match-card,
+.amazon-dark-mode .cards_carousel_widget-sug-column,
+.amazon-dark-mode .a-alert-container,
+.amazon-dark-mode .a-badge-region,
+.amazon-dark-mode .octopus-pc-category-card-v2-category-link,
+.amazon-dark-mode .octopus-pc-category-card-v2-item-block,
+.amazon-dark-mode .octopus-pc-category-card-v2,
+.amazon-dark-mode .octopus-pc-item-block,
+.amazon-dark-mode .octopus-pc-asin-info-section,
+.amazon-dark-mode .octopus-pc-card,
+.amazon-dark-mode .a-popover-header,
+.amazon-dark-mode .nav-flyout-sidePanel,
+.amazon-dark-mode .a-active,
+.amazon-dark-mode #nav-subnav,
+.amazon-dark-mode .nav-coreFlyout,
+.amazon-dark-mode [class*="_quad-multi-asin-card-v2_style_badgeMessage"],
+.amazon-dark-mode .card-lite,
+.amazon-dark-mode .image-shoveler,
+.amazon-dark-mode .s-card-container,
+.amazon-dark-mode .s-result-item,
+.amazon-dark-mode .a-cardui,
+.amazon-dark-mode [data-component-type="s-search-result"],
+.amazon-dark-mode .a-carousel-card,
+.amazon-dark-mode .octopus-pc-card,
+.amazon-dark-mode .GridPresets-module__gridPreset_2xfVT,
+.amazon-dark-mode .Grid-module__gridItem_2yfVT,
+.amazon-dark-mode .a-box {
+  background-color: var(--container-color) !important;
+  border-color: var(--border-color) !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Very specific arrow in popup to change country */
+.amazon-dark-mode .nav-arrow-inner {
+  border-bottom: 9px solid var(--container-color) !important;
+}
+
+.amazon-dark-mode .a-expander-content-fade{
+  background: none !important;
+}
+
+/* Regular text  */
+.amazon-dark-mode .s-suggestion-nile-desktop-value,
+.amazon-dark-mode .tab-content > span,
+.amazon-dark-mode .octopus-quick-look-title,
+.amazon-dark-mode #important-information h2,
+.amazon-dark-mode .a-carousel-heading,
+.amazon-dark-mode #page-title,
+.amazon-dark-mode .aod-asin-title-text-class,
+.amazon-dark-mode .description,
+.amazon-dark-mode .fs-button,
+.amazon-dark-mode .olp-from,
+.amazon-dark-mode .a-text-center,
+.amazon-dark-mode .a-size-mini,
+.amazon-dark-mode [class*="Bubble-module"],
+.amazon-dark-mode span.a-truncate-cut,
+.amazon-dark-mode .dcl-product-label,
+.amazon-dark-mode .d-header-title,
+.amazon-dark-mode .a-list-item span,
+.amazon-dark-mode .page-tabs__tab,
+.amazon-dark-mode .a-text-bold,
+.amazon-dark-mode label,
+.amazon-dark-mode .fs-heading,
+.amazon-dark-mode .fs-match-card-title,
+.amazon-dark-mode .a-checkbox-label, 
+.amazon-dark-mode .a-list-item, 
+.amazon-dark-mode .a-color-base, 
+.amazon-dark-mode .a-button-text, 
+.amazon-dark-mode .a-spacing-mini, 
+.amazon-dark-mode .a-size-small, 
+.amazon-dark-mode .a-text-normal {
+  color: var(--text-primary) !important;
+}
+
+/* Secondary text  */
+.amazon-dark-mode .a-spacing-small,
+.amazon-dark-mode .a-size-base,
+.amazon-dark-mode .fs-match-card-desc,
+.amazon-dark-mode .a-color-secondary {
+  color: var(--text-secondary) !important;
+}
+
+/* Ikoner */
+.amazon-dark-mode .s-suggestion-icon-left,
+.amazon-dark-mode .a-icon-next-rounded,
+.amazon-dark-mode .a-icon-extender-expand {
+  border-color: #ffffff !important;
+}
+
+/* Search Bar */
+.amazon-dark-mode #twotabsearchtextbox,
+.amazon-dark-mode .nav-search-field input {
+  background-color: var(--input-background) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Search Bar Container */
+/* .amazon-dark-mode #nav-search,
+.amazon-dark-mode .nav-searchbar,
+.amazon-dark-mode .nav-search-field {
+  background-color: var(--input-background) !important;
+  border-color: var(--border-color) !important;
+} */
+
+/* Handle specific elements */
+/* .amazon-dark-mode div:not([class*="image"]):not([class*="img"]):not([class*="photo"]):not([class*="thumb"]) {
+  color: var(--text-primary) !important;
+} */
+
+/* Fix for product images */
+.amazon-dark-mode img,
+.amazon-dark-mode .image,
+.amazon-dark-mode .a-image-container,
+.amazon-dark-mode [class*="image"],
+.amazon-dark-mode [class*="img"],
+.amazon-dark-mode [class*="photo"],
+.amazon-dark-mode [class*="thumb"],
+.amazon-dark-mode [role="img"] {
+  filter: none !important;
+  background-color: transparent !important;
+  mix-blend-mode: normal;
+}
+
+/* Product image containers */
+/* .amazon-dark-mode #imageBlock,
+.amazon-dark-mode #main-image-container,
+.amazon-dark-mode #imgTagWrapperId,
+.amazon-dark-mode .imgTagWrapper,
+.amazon-dark-mode .a-image-container {
+  background-color: transparent !important;
+} */
+
+/* Links */
+.amazon-dark-mode .olp-link, 
+.amazon-dark-mode .nav-text, 
+.amazon-dark-mode .action_button span,
+.amazon-dark-mode a {
+  color: var(--accent-color) !important;
+}
+
+/* Buttons */
+.amazon-dark-mode [class*="_badgeMessage"],
+.amazon-dark-mode [class*="style_outlinedBadge"],
+.amazon-dark-mode .a-carousel-goto-nextpage,
+.amazon-dark-mode #sc-secondary-list-tab,
+.amazon-dark-mode #wishlist-page ul,
+.amazon-dark-mode .nav-rufus-disco,
+.amazon-dark-mode .fs-button,
+.amazon-dark-mode .wl-list,
+.amazon-dark-mode .help-topics,
+.amazon-dark-mode .swatch-title-text-container,
+.amazon-dark-mode .action_button,
+.amazon-dark-mode .a-popover-inner,
+.amazon-dark-mode .a-button-inner,
+.amazon-dark-mode .a-button {
+  background: var(--surface-color) !important;
+  background-color: var(--surface-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+/* Special för knappar med svart bild */
+.amazon-dark-mode .rpi-icon,
+.amazon-dark-mode .ewc-delete-icon {
+  background-color: #ffffff !important;
+}
+/* Price and other important text */
+.amazon-dark-mode #octopus-quick-look-asin-popover .octopus-quick-look-pricing .octopus-quick-look-price,
+.amazon-dark-mode .MMGridLayout .formatsRow .swatchElement .slot-price>*,
+.amazon-dark-mode .slot-price span,
+.amazon-dark-mode .slot-price,
+.amazon-dark-mode .a-price,
+.amazon-dark-mode .a-price-whole,
+.amazon-dark-mode .a-price-fraction,
+.amazon-dark-mode #priceblock_ourprice,
+.amazon-dark-mode .a-price-symbol {
+  color: var(--accent-color) !important;
+}
+
+/* Input fields */
+/* .amazon-dark-mode input,
+.amazon-dark-mode textarea,
+.amazon-dark-mode select {
+  background-color: var(--input-background) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border-color) !important;
+} */
+
+/* Search suggestions */
+/* .amazon-dark-mode .s-suggestion {
+  background-color: var(--container-color) !important;
+  color: var(--text-primary) !important;
+} */
+
+/* Fix for sprites and small icons */
+/* .amazon-dark-mode .sprite,
+.amazon-dark-mode i[class*="icon"],
+.amazon-dark-mode .a-icon {
+  filter: brightness(0.8) !important;
+} */
+
+/* Special så inte bilder blir gråa */
+/* .amazon-dark-mode .a-cardui-body, */
+.amazon-dark-mode li.a-carousel-card {
+  background-color: transparent !important;
+}
+
+/* Special lösning för antal artiklar - + knapp nummer */
+.amazon-dark-mode [id*="lineItemQuantity"],
+.amazon-dark-mode .sc-quantity-stepper {
+  color: #121212
+}
+
+/* Special för att ta bordet gradient i varusida */
+.amazon-dark-mode .a-divider-inner::after {
+  background: var(--background-color) !important;
+}

@@ -1,17 +1,20 @@
 {
-  "name": "pub-med-search-tool",
-  "displayName": "Pub med search tool",
-  "version": "0.0.1",
-  "description": "Helps you your searching on PubMed",
-  "author": "Linneus",
+  "name": "amazon-dark-mode",
+  "displayName": "Amazon Dark Mode",
+  "version": "0.1.0",
+  "description": "Toggle dark mode for Amazon",
+  "author": "Linnéus",
   "scripts": {
     "dev": "plasmo dev",
     "build": "plasmo build",
     "package": "plasmo package"
   },
   "dependencies": {
+    "@plasmohq/storage": "^1.13.0",
+    "lucide-react": "^0.469.0",
     "plasmo": "0.89.4",
     "react": "18.2.0",
+    "react-colorful": "^5.6.1",
     "react-dom": "18.2.0",
     "tailwindcss": "3.4.1"
   },
@@ -27,7 +30,35 @@
   },
   "manifest": {
     "host_permissions": [
-      "https://*/*"
+      "https://*.amazon.com/*",
+      "https://*.amazon.co.uk/*",
+      "https://*.amazon.de/*",
+      "https://*.amazon.fr/*",
+      "https://*.amazon.it/*",
+      "https://*.amazon.es/*",
+      "https://*.amazon.ca/*",
+      "https://*.amazon.co.jp/*",
+      "https://*.amazon.cn/*",
+      "https://*.amazon.in/*",
+      "https://*.amazon.com.br/*",
+      "https://*.amazon.com.be/*",
+      "https://*.amazon.com.mx/*",
+      "https://*.amazon.com.au/*",
+      "https://*.amazon.com.tr/*",
+      "https://*.amazon.nl/*",
+      "https://*.amazon.sg/*",
+      "https://*.amazon.sa/*",
+      "https://*.amazon.ae/*",
+      "https://*.amazon.pl/*",
+      "https://*.amazon.se/*",
+      "https://*.amazon.eg/*",
+      "https://*.amazon.tr/*"
+    ],
+    "permissions": [
+      "storage",
+      "activeTab",
+      "tabs",
+      "scripting"
     ]
   }
 }
