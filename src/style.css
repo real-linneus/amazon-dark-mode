@@ -15,6 +15,7 @@
 }
 
 .amazon-dark-mode body,
+.amazon-dark-mode body > #a-page,
 .amazon-dark-mode #navbar,
 .amazon-dark-mode #nav-belt,
 .amazon-dark-mode #nav-main,
@@ -46,13 +47,23 @@
 .amazon-dark-mode .a-divider-inner::after,
 .amazon-dark-mode [class*="DesktopDiscountAsinGrid"],
 .amazon-dark-mode .mako-v2,
+.amazon-dark-mode .bucketDivider,
+.amazon-dark-mode .cs-help-header,
+.amazon-dark-mode hr.bucketDivider::after,
+.amazon-dark-mode div[class*="cgTextCenter"] > h1,
+.amazon-dark-mode div[class*="bxcGridText"],
+.amazon-dark-mode .amazonPayWalletWidgetRow,
+.amazon-dark-mode [class*="banner-landing-page-header_style"],
+.amazon-dark-mode [class*="zg-banner-landing-page-footer_style"],
 .amazon-dark-mode #search {
   background-color: var(--background-color) !important;
+  background: var(--background-color) !important;
   color: var(--text-primary) !important;
 }
 
 /* Product Containers */
 /* .amazon-dark-mode #mediamatrix_feature_div.div, */
+.amazon-dark-mode .amazon-pay-wallet-menu-row,
 .amazon-dark-mode [id*="tab_heading_desktop_buybox_group"],
 .amazon-dark-mode .bbop-grid-container,
 .amazon-dark-mode .maple-banner__text,
@@ -120,22 +131,57 @@
 .amazon-dark-mode .octopus-pc-card,
 .amazon-dark-mode .GridPresets-module__gridPreset_2xfVT,
 .amazon-dark-mode .Grid-module__gridItem_2yfVT,
+.amazon-dark-mode .a-spacing-top-small > tbody > tr > th,
+.amazon-dark-mode .a-spacing-top-small > tbody > tr > td,
+.amazon-dark-mode .apx-wallet-widget-section,
+.amazon-dark-mode .apx-wallet-payment-method-details,
+.amazon-dark-mode .apx-wallet-payment-method-details-section,
+.amazon-dark-mode .apx-wallet-selectable-payment-method-tab,
+.amazon-dark-mode .sl-sobe-card-desktop,
+.amazon-dark-mode #sobe_d_b_ms_3-carousel,
+.amazon-dark-mode .apx-transaction-date-container,
+.amazon-dark-mode .profile-hub-category > .header,
+.amazon-dark-mode .trrws-page-container th,
+.amazon-dark-mode .trrws-page-container td,
+.amazon-dark-mode .desktop-row,
+.amazon-dark-mode .desktop-row div,
+.amazon-dark-mode [class*="product-comparison-desktop"] > tbody > tr,
+/* .amazon-dark-mode #gridRegion-buybox, */
 .amazon-dark-mode .a-box {
   background-color: var(--container-color) !important;
   border-color: var(--border-color) !important;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important; */
 }
 
-/* Very specific arrow in popup to change country */
-.amazon-dark-mode .nav-arrow-inner {
-  border-bottom: 9px solid var(--container-color) !important;
-}
-
-.amazon-dark-mode .a-expander-content-fade{
-  background: none !important;
+/* Buttons */
+.amazon-dark-mode div.apx-wallet-payment-method-tab-selected,
+.amazon-dark-mode div.bxc-grid__text > h4,
+.amazon-dark-mode [class*="_badgeMessage"],
+.amazon-dark-mode [class*="style_outlinedBadge"],
+.amazon-dark-mode .a-carousel-goto-nextpage,
+.amazon-dark-mode #sc-secondary-list-tab,
+.amazon-dark-mode #wishlist-page ul,
+.amazon-dark-mode .nav-rufus-disco,
+.amazon-dark-mode .fs-button,
+.amazon-dark-mode .wl-list,
+.amazon-dark-mode .help-topics,
+.amazon-dark-mode .swatch-title-text-container,
+.amazon-dark-mode .action_button,
+.amazon-dark-mode .a-popover-inner,
+.amazon-dark-mode .a-button-inner,
+.amazon-dark-mode .a-button {
+  background: var(--surface-color) !important;
+  background-color: var(--surface-color) !important;
+  border-color: var(--accent-color) !important;
 }
 
 /* Regular text  */
+.amazon-dark-mode .a-spacing-large > h2,
+.amazon-dark-mode [class*="nav-tree-all_style_zg-selected"],
+.amazon-dark-mode .profile-hub-category .filter-pill,
+.amazon-dark-mode .accordion-trigger-content,
+.amazon-dark-mode .sl-sobe-carousel-sub-card-title,
+.amazon-dark-mode td.message-table-row,
 .amazon-dark-mode .s-suggestion-nile-desktop-value,
 .amazon-dark-mode .tab-content > span,
 .amazon-dark-mode .octopus-quick-look-title,
@@ -169,11 +215,26 @@
 }
 
 /* Secondary text  */
+.amazon-dark-mode [class*="zg-carousel-sales-movement"],
 .amazon-dark-mode .a-spacing-small,
 .amazon-dark-mode .a-size-base,
 .amazon-dark-mode .fs-match-card-desc,
 .amazon-dark-mode .a-color-secondary {
   color: var(--text-secondary) !important;
+}
+
+/* Price and other important text */
+.amazon-dark-mode .profile-hub-category .selected,
+.amazon-dark-mode #octopus-quick-look-asin-popover .octopus-quick-look-pricing .octopus-quick-look-price,
+.amazon-dark-mode .MMGridLayout .formatsRow .swatchElement .slot-price>*,
+.amazon-dark-mode .slot-price span,
+.amazon-dark-mode .slot-price,
+.amazon-dark-mode .a-price,
+.amazon-dark-mode .a-price-whole,
+.amazon-dark-mode .a-price-fraction,
+.amazon-dark-mode #priceblock_ourprice,
+.amazon-dark-mode .a-price-symbol {
+  color: var(--accent-color) !important;
 }
 
 /* Ikoner */
@@ -184,6 +245,8 @@
 }
 
 /* Search Bar */
+.amazon-dark-mode .a-search > input,
+.amazon-dark-mode #help-search,
 .amazon-dark-mode #twotabsearchtextbox,
 .amazon-dark-mode .nav-search-field input {
   background-color: var(--input-background) !important;
@@ -191,18 +254,14 @@
   border-color: var(--border-color) !important;
 }
 
-/* Search Bar Container */
-/* .amazon-dark-mode #nav-search,
-.amazon-dark-mode .nav-searchbar,
-.amazon-dark-mode .nav-search-field {
-  background-color: var(--input-background) !important;
-  border-color: var(--border-color) !important;
-} */
+/* Very specific arrow in popup to change country */
+.amazon-dark-mode .nav-arrow-inner {
+  border-bottom: 9px solid var(--container-color) !important;
+}
 
-/* Handle specific elements */
-/* .amazon-dark-mode div:not([class*="image"]):not([class*="img"]):not([class*="photo"]):not([class*="thumb"]) {
-  color: var(--text-primary) !important;
-} */
+.amazon-dark-mode .a-expander-content-fade{
+  background: none !important;
+}
 
 /* Fix for product images */
 .amazon-dark-mode img,
@@ -218,15 +277,6 @@
   mix-blend-mode: normal;
 }
 
-/* Product image containers */
-/* .amazon-dark-mode #imageBlock,
-.amazon-dark-mode #main-image-container,
-.amazon-dark-mode #imgTagWrapperId,
-.amazon-dark-mode .imgTagWrapper,
-.amazon-dark-mode .a-image-container {
-  background-color: transparent !important;
-} */
-
 /* Links */
 .amazon-dark-mode .olp-link, 
 .amazon-dark-mode .nav-text, 
@@ -235,65 +285,11 @@
   color: var(--accent-color) !important;
 }
 
-/* Buttons */
-.amazon-dark-mode [class*="_badgeMessage"],
-.amazon-dark-mode [class*="style_outlinedBadge"],
-.amazon-dark-mode .a-carousel-goto-nextpage,
-.amazon-dark-mode #sc-secondary-list-tab,
-.amazon-dark-mode #wishlist-page ul,
-.amazon-dark-mode .nav-rufus-disco,
-.amazon-dark-mode .fs-button,
-.amazon-dark-mode .wl-list,
-.amazon-dark-mode .help-topics,
-.amazon-dark-mode .swatch-title-text-container,
-.amazon-dark-mode .action_button,
-.amazon-dark-mode .a-popover-inner,
-.amazon-dark-mode .a-button-inner,
-.amazon-dark-mode .a-button {
-  background: var(--surface-color) !important;
-  background-color: var(--surface-color) !important;
-  border-color: var(--accent-color) !important;
-}
-
 /* Special för knappar med svart bild */
 .amazon-dark-mode .rpi-icon,
 .amazon-dark-mode .ewc-delete-icon {
   background-color: #ffffff !important;
 }
-/* Price and other important text */
-.amazon-dark-mode #octopus-quick-look-asin-popover .octopus-quick-look-pricing .octopus-quick-look-price,
-.amazon-dark-mode .MMGridLayout .formatsRow .swatchElement .slot-price>*,
-.amazon-dark-mode .slot-price span,
-.amazon-dark-mode .slot-price,
-.amazon-dark-mode .a-price,
-.amazon-dark-mode .a-price-whole,
-.amazon-dark-mode .a-price-fraction,
-.amazon-dark-mode #priceblock_ourprice,
-.amazon-dark-mode .a-price-symbol {
-  color: var(--accent-color) !important;
-}
-
-/* Input fields */
-/* .amazon-dark-mode input,
-.amazon-dark-mode textarea,
-.amazon-dark-mode select {
-  background-color: var(--input-background) !important;
-  color: var(--text-primary) !important;
-  border-color: var(--border-color) !important;
-} */
-
-/* Search suggestions */
-/* .amazon-dark-mode .s-suggestion {
-  background-color: var(--container-color) !important;
-  color: var(--text-primary) !important;
-} */
-
-/* Fix for sprites and small icons */
-/* .amazon-dark-mode .sprite,
-.amazon-dark-mode i[class*="icon"],
-.amazon-dark-mode .a-icon {
-  filter: brightness(0.8) !important;
-} */
 
 /* Special så inte bilder blir gråa */
 /* .amazon-dark-mode .a-cardui-body, */
