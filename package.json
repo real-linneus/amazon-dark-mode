@@ -1,7 +1,7 @@
 {
   "name": "amazon-dark-mode",
   "displayName": "Amazon Dark Mode",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Toggle dark mode for Amazon - Perfect for nighttime browsing",
   "author": "Linnéus",
   "scripts": {
